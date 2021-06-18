@@ -1,0 +1,16 @@
+spring.cloud.config.enabled: false
+
+spring:
+  application.name: gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+
+    gateway:
+      routes:
+      - id: tracking
+        uri: http://localhost:8083/
+        predicates:
+          - Path=/api/status**, /api/phase/**,/api/iteration/**
