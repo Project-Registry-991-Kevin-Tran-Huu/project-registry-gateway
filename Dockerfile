@@ -6,7 +6,7 @@ RUN cp target/gateway-0.0.1-SNAPSHOT.jar app.jar
 RUN java -Djarmode=layertools -jar app.jar extract
 
 FROM adoptopenjdk:11-jre-hotspot
-EXPOSE 8086
+EXPOSE 8085
 ENV JAVA_MEM_OPTS="-Xms512m -Xmx512m"
 ENV JAVA_OPTS="${JAVA_OPTS} -XX:+UnlockExperimentalVMOptions -XX:+UseZGC"
 ENV JAVA_OPTS="${JAVA_OPTS} ${JAVA_MEM_OPTS}"
