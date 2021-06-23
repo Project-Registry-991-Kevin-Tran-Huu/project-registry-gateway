@@ -24,7 +24,7 @@ To-do List:
 ## Usage
 
 # Running Locally
-#### Before running this application as a Spring Boot App, have docker installed on your machine and have an instance of consul running. Instructions for that are below.
+#### Before running this application as a Spring Boot App, have docker installed on your machine and have an instance of consul running. Instructions for this setup follow.
 * install docker desktop on your machine
 * run the following commands to pull in consul from docker hub and to get it running:
 *   docker pull consul
