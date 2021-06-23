@@ -9,7 +9,19 @@ spring:
         enabled: true
         service-id: config
     
+    
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedMethods:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            allowedHeaders:
+            - content-type
       routes:
         - id: account
           uri: http://localhost:8081/
