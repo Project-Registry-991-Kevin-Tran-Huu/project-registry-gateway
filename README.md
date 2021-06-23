@@ -30,8 +30,8 @@ To-do List:
 *   docker pull consul
 *   docker run -d --name consul -p 8500:8500 consul
 *   docker start consul
-
-
+<br>
+<br>
 * git clone https://github.com/Project-Registry-991-Kevin-Tran-Huu/project-registry-gateway
 * Run this project in Eclipse or SpringToolSuite
 * Do a Maven update to import the dependencies needed from the pom.xml
