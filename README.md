@@ -19,11 +19,10 @@ This is a microservice representation of the Project Registry Backend. This repo
 * Provides gateway services for the microservices
 
 To-do List:
-* 
 
 ## Usage
 
-# Running Locally
+## Running Locally
 #### Before running this application as a Spring Boot App, have docker installed on your machine and have an instance of consul running. Instructions for this setup follow.
 * install docker desktop on your machine
 * run the following commands to pull in consul from docker hub and to get it running:
@@ -39,4 +38,4 @@ To-do List:
 * Launch this application using spring boot.
 * This app will run at http://localhost:8085
 
-# Docker Image
+## Docker Image
