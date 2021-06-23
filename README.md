@@ -1,7 +1,7 @@
 # project-registry-gateway
 
 ## Project Description
-This is a microservice representation of the Project Registry Backend. This microservice contains the Spring Cloud Gateway code.
+This is a microservice representation of the Project Registry Backend. This repo contains the Spring Cloud Gateway.
 
 ## Technologies Used
 * Java 8
