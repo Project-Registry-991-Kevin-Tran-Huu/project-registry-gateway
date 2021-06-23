@@ -21,6 +21,11 @@ This is a microservice representation of the Project Registry Backend. This repo
 To-do List:
 
 ## Usage
+* This application serves as a gateway for the following microservices
+  - project-registry-account-microservice: https://github.com/Project-Registry-991-Kevin-Tran-Huu/project-registry-account-microservice
+  - project-registry-project-microservice: https://github.com/Project-Registry-991-Kevin-Tran-Huu/project-registry-project-microservice
+  - project-registry-tracking-microservice: https://github.com/Project-Registry-991-Kevin-Tran-Huu/project-registry-tracking-microservice
+* This application is to be used in conjuction with a consul discovery service. 
 
 ## Running Locally
 #### Before running this application as a Spring Boot App, have docker installed on your machine and have an instance of consul running. Instructions for this setup follow.
