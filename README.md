@@ -16,29 +16,27 @@ This is a microservice representation of the Project Registry Backend. This micr
 * Jenkins
 
 ## Features
-* Communicate with the Iteration, Phase, and Status tables within a AWS S3 database.
-* CRUD operations for Iteration, Phase, and Status.
-* Has API endpoints to connect to each service.
+* Provides gateway services for the microservices
 
 To-do List:
-* Create separate database structure for this microservice.
+* 
 
 ## Usage
-* This application serves as an API for the Registry frontend.
-* Entering the base endpoints into a web browser will process a get request from the api. Returning a full list of the respective database entities. 
-  - Iteration endpoint: /api/iteration
-  - Phase endpoint: /api/phase
-  - Status endpoint: /api/status
-* Adding "/id/{id}" to a base endpoint retrieves a specific entity object by its id.
-* Other API calls require execution from the front end or from a testing application like Postman.
 
 # Running Locally
-#### Reference the **Running Locally** section in https://github.com/Project-Registry-991-Kevin-Tran-Huu/project-registry-gateway and have it running before this service
-* git clone https://github.com/Project-Registry-991-Kevin-Tran-Huu/project-registry-tracking-microservice.git
+#### Before running this application as a Spring Boot App, have docker installed on your machine and have an instance of consul running. Instructions for that are below.
+* install docker desktop on your machine
+* run the following commands to pull in consul from docker hub and to get it running:
+*   docker pull consul
+*   docker run -d --name consul -p 8500:8500 consul
+*   docker start consul
+
+
+* git clone https://github.com/Project-Registry-991-Kevin-Tran-Huu/project-registry-gateway
 * Run this project in Eclipse or SpringToolSuite
 * Do a Maven update to import the dependencies needed from the pom.xml
 * Launch a Consul instance from a Docker container on port 8500
 * Launch this application using spring boot.
-* This app will run at http://localhost:8083
+* This app will run at http://localhost:8085
 
 # Docker Image
