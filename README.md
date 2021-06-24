@@ -42,5 +42,3 @@ To-do List:
 * Launch a Consul instance from a Docker container on port 8500
 * Launch this application using spring boot.
 * This app will run at http://localhost:8085
-
-## Docker Image
